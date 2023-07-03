@@ -173,7 +173,7 @@ int main(int count, char *strings[])
         printf("Connection: %s:%d\n",inet_ntoa(addr.sin_addr), ntohs(addr.sin_port));
         ssl = SSL_new(ctx);              /* get new SSL state with context */
         SSL_set_fd(ssl, client);      /* set connection socket to SSL state */
-        Servlet(ssl);         /* service connection */
+        Servlet(ssl);         /* service connection */ // reads data
     }
     close(server);          /* close server socket */
     SSL_CTX_free(ctx);         /* release context */

@@ -9,7 +9,7 @@
 #define PORT 8080
 int main(int argc, char const* argv[])
 {
-	int server_fd, client_fd, valread;
+    int server_fd, client_fd, valread;
 	struct sockaddr_in address;
 	int opt = 1;
 	int addrlen = sizeof(address);
@@ -53,10 +53,10 @@ int main(int argc, char const* argv[])
 		perror("accept");
 		exit(EXIT_FAILURE);
 	}
-	
+
 	printf("Somebody connected at fd %d\n",client_fd);
 	// valread is how many bytes we got from network
-	// if 0 bytes, retry tto get data
+	// if 0 bytes, retry to get data
 	// // if less than or equal to 1024, we might have some more data
 	valread = read(client_fd, buffer, 1024);
 	printf("%s\n", buffer);

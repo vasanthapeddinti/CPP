@@ -1,5 +1,5 @@
 //From http://simplestcodings.blogspot.com/2010/08/secure-server-client-using-openssl-in-c.html
-//SSL-Client.c
+// SSL-Client.c
 // gcc -Wall -o ssl-client ssl-client.c -L/usr/lib -lssl -lcrypto
 //  ./ssl-client 127.0.0.1 8081
 #include <stdio.h>
