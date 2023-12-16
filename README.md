@@ -1,5 +1,3 @@
 # CPP
 
-To compile and run thread programs:
-g++ -pthread -o a.out simple_thread.cpp
-./a.out
+This repo is just to revise fundamental data structures and algorithms
